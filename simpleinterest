@@ -26,3 +26,4 @@ compound_interest = amount - principal
 # Display the result
 print(f"\nCompound Interest = ₹{compound_interest:.2f}")
 print(f"Total Amount = ₹{amount:.2f}")
+
