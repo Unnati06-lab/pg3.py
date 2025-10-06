@@ -10,3 +10,19 @@ simple_interest = (principal * rate * time) / 100
 
 # Display the result
 print(f"\nSimple Interest = ₹{simple_interest:.2f}")
+# Compound Interest Formula: A = P * (1 + R/100) ** T
+# CI = A - P
+
+# Input values
+principal = float(input("Enter the principal amount (P): "))
+rate = float(input("Enter the annual interest rate (R): "))
+time = float(input("Enter the time in years (T): "))
+n = int(input("Enter number of times interest is compounded per year (n): "))
+
+# Calculate Compound Interest
+amount = principal * (1 + rate / (100 * n)) ** (n * time)
+compound_interest = amount - principal
+
+# Display the result
+print(f"\nCompound Interest = ₹{compound_interest:.2f}")
+print(f"Total Amount = ₹{amount:.2f}")
